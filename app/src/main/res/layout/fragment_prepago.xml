@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PrepagoFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_margin="8dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:src="@drawable/icon_card"/>
+
+                <TextView
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"
+                    android:text="Generar Tarjetas"
+                    android:textSize="30sp"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:src="@drawable/icon_graph"/>
+
+                <TextView
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"
+                    android:text="Reporte de transaciones"
+                    android:textSize="30sp"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10">
+                
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:src="@drawable/icons_list"/>
+                
+                <TextView
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"
+                    android:text="Lista de Tarjetas"
+                    android:textSize="30sp"/>
+                
+                
+            </LinearLayout>
+            
+            
+            
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
