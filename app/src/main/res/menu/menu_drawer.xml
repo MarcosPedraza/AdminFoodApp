@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/drawermenu_group_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_pedidos"
+            android:checked="true"
+            android:icon="@drawable/ic_edit"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/item_menu"
+            android:icon="@drawable/ic_menu_m"
+            android:title="Menu del dia" />
+        <item
+            android:id="@+id/item_prepago"
+            android:icon="@drawable/ic_pago"
+            android:title="Prepago" />
+
+    </group>
+</menu>
