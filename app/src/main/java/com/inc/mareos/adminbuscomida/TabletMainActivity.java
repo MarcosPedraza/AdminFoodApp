@@ -32,6 +32,7 @@ public class TabletMainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -91,13 +92,30 @@ public class TabletMainActivity extends AppCompatActivity
 
     public void setFragment(int i)
     {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-
+        FragmentManager fragmentManager;
+        FragmentTransaction fragmentTransaction;
 
         switch (i)
         {
+            case 1:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                PedidosFragment pedidosFragment = new PedidosFragment();
+                fragmentTransaction.replace(R.id.main_container,pedidosFragment);
+                fragmentTransaction.commit();
+                break;
+
+            case 2:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                MenuFragment menuFragment = new MenuFragment();
+                fragmentTransaction.replace(R.id.main_container,menuFragment);
+                fragmentTransaction.commit();
+                break;
+
             case 3:
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
                 PrepagoFragment prepagoFragment = new PrepagoFragment();
                 fragmentTransaction.replace(R.id.main_container,prepagoFragment);
                 fragmentTransaction.commit();
